@@ -1,0 +1,39 @@
+<div class="col-12">
+
+  <div style="display: flex;justify-content: space-between" class="mb-1">
+    <div class="lead pl-2 pt-2">
+
+    </div>
+
+    <div class="pt-2 pr-2">
+      <button type="button" style="align-self: center" class="btn btn-info mr-3" (click)="addNewService()">
+        <i class="mdi mdi-plus-box"></i>
+        Add new service
+      </button>
+    </div>
+  </div>
+  <hr>
+
+  <!-- <div class="table-responsive"> -->
+  <div class="tableActions">
+    <!-- <table class="table table-hover no-wrap"> -->
+    <table class=" table color-bordered-table info-bordered-table">
+      <thead>
+        <tr>
+          <th>Name </th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <!-- <tbody> -->
+      <tbody id="content">
+        <tr
+          *ngFor="let item of sercicesList">
+          <td scope="col">{{item.name}}</td>
+          <td scope="col">{{item.description}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>

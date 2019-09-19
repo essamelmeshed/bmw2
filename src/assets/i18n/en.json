@@ -1,0 +1,110 @@
+{
+    "tableMailID": "ID",
+  "actions": {
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "exportCSV": "Export CSV",
+    "exportPdf": "Export PDF",
+     "next": "next",
+     "previous": "previous",
+     "show":"show",
+     "showRows": "Show Rows",
+     "help":"help"
+  },
+  "clientsPage": {
+    "buttons": {
+      "reports": "reports",
+      "printPdf": "Print PDF"
+    },
+    "tableHeaders": {
+    "customerCode": "Id",
+    "customerNameAr": "الاسم بالعربي ",
+    "customerNameEn": " Name En",
+    "password": " password" ,
+    "phone": "Phone Number ",
+    "Balance": "Balance",
+    "status": "status",
+   "Constract": "Constract",
+    "userName": "  userName ",
+    "Actions": "Actions"
+    },
+    "tableActions": {
+      "delete": "Delete",
+      "edit": "Edit"
+    },
+    "clientsInfopage":{
+      "tableHeaders":{
+        "infoId" : "client Id",
+        "informationType": "information Type",
+        "informationValue": "information Value",
+        "Status":"Active / not-Active",
+        "Actions": "Actions"
+      }
+    }
+  },
+  "cardsPage": {
+    "tableHeaders": {
+      "value": "Value",
+      "actions": "Actions"
+    }
+  },
+  "CompaniesPage": {
+    "tableHeaders": {
+      "value": "Value",
+        "arabicName": "company Name",
+        "englishName": "company Name ",
+        "logoPath": " company Logo",
+      "actions": "Actions",
+      "active" : "active/not-active"
+    }
+  },
+  "contractsPage": {
+    "tableHeaders": {
+      "comments": "Comments",
+      "contractDate": "contract Date",
+      "contractStatus": " contract Status",
+      "name": "Name",
+      "status":"status",
+      "actions": "Actions"
+    }
+  },
+  "balancePage": {
+    "tableHeaders": {
+  "transactionsCode": "transactionsCode",
+ "transactionType": "transactionType",
+ "transactionDate": "transactionDate",
+ "BalanceBefore": "BalanceBefore",
+ "Operation": "Operation",
+      "actions": "Actions"
+    }
+  },
+  "cardsbalancePage": {
+    "tableHeaders": {
+  "transactionsCode": "transactionsCode",
+ "transactionType": "transactionType",
+ "transactionDate": "transactionDate",
+ "BalanceBefore": "BalanceBefore",
+ "Operation": "Operation",
+      "actions": "Actions"
+    }
+  },
+  "cardsLogPage": {
+    "tableHeaders": {
+  "transactionsCode": "transactionsCode",
+ "transactionType": "transactionType",
+ "transactionDate": "transactionDate",
+ "BalanceBefore": "BalanceBefore",
+ "Operation": "Operation",
+      "actions": "Actions"
+    }
+  },
+  "CreditPage": {
+    "tableHeaders": {
+  "companyName": "CompanyName",
+ "uploadDate": "UploadDate",
+ "fileName": "FileName",
+      "actions": "Actions"
+    }
+  }
+}

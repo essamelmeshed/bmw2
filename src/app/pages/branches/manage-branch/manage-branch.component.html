@@ -1,0 +1,126 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header bg-info">
+        <h4 class="m-b-0 text-white">Manage service</h4>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="form">
+          <div class="form-body">
+            <div class="row p-t-20">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="control-label" for="name">Name</label>
+                  <input type="text" name="name" class="form-control" [formControl]="name">
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="control-label" for="name">Select days off (Ex Saturday)</label>
+                  <tag-input [onlyFromAutocomplete]="true" [formControl]="daysOFF" class="form-control">
+                    <tag-input-dropdown [showDropdownIfEmpty]="true"
+                      [autocompleteItems]="['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']">
+                    </tag-input-dropdown>
+                  </tag-input>
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label" for="address">Address</label>
+                  <input type="text" name="address" class="form-control" [formControl]="address">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label" for="longitude">Longitude</label>
+                  <input type="number" name="longitude" class="form-control" [formControl]="longitude">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label" for="value">Latitude</label>
+                  <input type="number" name="latitude" class="form-control" [formControl]="latitude">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label" for="tel">Tel</label>
+                  <input type="tel" name="tel" class="form-control" [formControl]="tel">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label" for="fax">Fax</label>
+                  <input type="text" name="fax" class="form-control" [formControl]="fax">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label" for="bookAfter">Book after</label>
+                  <input type="text" name="bookAfter" class="form-control" [formControl]="bookAfter">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label" for="soltDuration">Solt Duration</label>
+                  <input type="text" name="soltDuration" class="form-control" [formControl]="soltDuration">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label" for="mobile">Mobile</label>
+                  <input type="text" name="mobile" class="form-control" [formControl]="mobile">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label" for="openTime">Open Time</label>
+                  <input type="time" name="openTime" class="form-control" [formControl]="openTime">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label" for="bookTimeFrom">Book Time From</label>
+                  <input type="time" name="bookTimeFrom" class="form-control" [formControl]="bookTimeFrom">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label" for="bookTimeTo">Book Time To</label>
+                  <input type="time" name="bookTimeTo" class="form-control" [formControl]="bookTimeTo">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label" for="closeTime">Close Time</label>
+                  <input type="time" name="closeTime" class="form-control" [formControl]="closeTime">
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn btn-success" (click)="onSubmit()"> <i class="fa fa-check"></i>
+              {{formSubmitBtn}}</button>
+            <a class="btn" [routerLink]="['/services']">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

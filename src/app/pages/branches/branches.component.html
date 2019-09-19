@@ -1,0 +1,46 @@
+<div class="col-12">
+
+  <div style="display: flex;justify-content: space-between" class="mb-1">
+    <div class="lead pl-2 pt-2">
+
+    </div>
+
+    <div class="pt-2 pr-2">
+      <button type="button" style="align-self: center" class="btn btn-info mr-3" (click)="addNewBranch()">
+        <i class="mdi mdi-plus-box"></i>
+        Add new branch
+      </button>
+    </div>
+  </div>
+  <hr>
+
+  <!-- <div class="table-responsive"> -->
+  <div class="tableActions">
+    <!-- <table class="table table-hover no-wrap"> -->
+    <table class=" table color-bordered-table info-bordered-table">
+      <thead>
+        <tr>
+          <th>Name </th>
+          <th>Open time</th>
+          <th>Close time</th>
+          <th>book Time From</th>
+          <th>book Time To</th>
+          <th></th>
+        </tr>
+      </thead>
+      <!-- <tbody> -->
+      <tbody id="content">
+        <tr *ngFor="let item of branchesList">
+          <td scope="col">{{item.name}}</td>
+          <td scope="col">{{item.closeTime}}</td>
+          <td scope="col">{{item.openTime}}</td>
+          <td scope="col">{{item.bookTimeFrom}}</td>
+          <td scope="col">{{item.bookTimeTo}}</td>
+          <td scope="col" (click)="openModel(item)">Details</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>

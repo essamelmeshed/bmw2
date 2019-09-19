@@ -1,0 +1,109 @@
+{
+  "tableMailID":"المسلسل",
+  "actions": {
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "اضافة",
+    "exportCSV": "استخراج CSV",
+    "exportPDF": "استخراج PDF",
+    "next":"التالي",
+    "previous":"السابق",
+    "show":"عرض",
+    "showRows":"عرض البيانات",
+    "help":"مساعده"
+    },
+  "clientsPage": {
+    "buttons": {
+      "reports": "تقارير",
+      "printPdf": "طباعه PDF"
+    },
+   "tableHeaders": {
+     "customerCode": "id",
+     "customerNameAr": "الاسم بالعربي",
+     "customerNameEn": " Name En",
+     "password": "الرقم السري ",
+     "phone": "رقم التليفون ",
+     "Balance": "القيمه",
+     "status": "الحاله",
+     "Constract": "الوضوح ",
+     "userName": "اسم المستخدم ",
+"Actions": "العمليات "
+    },
+    "tableActions": {
+      "delete": "حذف",
+      "edit": "تعديل"
+    },
+    "clientsInfopage": {
+      "tableHeaders": {
+        "infoId": "تعريف العميل",
+        "informationType": "بيانات العميل ",
+        "informationValue": "قيمه البيانات",
+        "Status": "غير فعال  / فعال ",
+        "Actions": "العمليات "
+      }
+    }
+  },
+  "cardsPage": {
+    "tableHeaders": {
+      "value": "القيمة",
+      "actions": "عمليات"
+    }
+  },
+  "contractsPage": {
+    "tableHeaders": {
+      "comments": "التعليقات",
+      "contractDate": "تاريخ العقد",
+      "contractStatus": "حالة العقد ",
+      "name": "الاسم",
+      "actions": "عمليات"
+    }
+
+  },"CompaniesPage":{
+    "tableHeaders":{
+      "value":"القيمة",
+      "arabicName": "اسم الشركه ",
+      "englishName":"اسم الشركه ",
+      "logoPath": "لوجو الشركه",
+      "active":"فعال / غير فعال ",
+      "actions":"عمليات"
+    }
+  },
+  "balancePage":{
+    "tableHeaders":{
+     "transactionsCode": "كود الرصيد ",
+     "transactionType": "نوع الرصيد",
+     "transactionDate": "تاريخ الرصيد ",
+     "BalanceBefore": "الرصيد قبل",
+     "Operation": "Operation",
+      "actions":"عمليات"
+    }
+  },
+  "cardsbalancePage": {
+    "tableHeaders":{
+     "transactionsCode": "كود الرصيد ",
+     "transactionType": "نوع الرصيد",
+     "transactionDate": "تاريخ الرصيد ",
+     "BalanceBefore": "الرصيد قبل",
+     "Operation": "Operation",
+      "actions":"عمليات"
+    }
+  },
+  "cardsLogPage": {
+    "tableHeaders":{
+     "transactionsCode": "كود الرصيد ",
+     "transactionType": "نوع الرصيد",
+     "transactionDate": "تاريخ الرصيد ",
+     "BalanceBefore": "الرصيد قبل",
+     "Operation": "Operation",
+      "actions":"عمليات"
+    }
+  },
+    "CreditPage": {
+      "tableHeaders": {
+        "companyName": "إسم الشركه ",
+        "uploadDate": "تاريخ إدخال الملف ",
+        "fileName": "اسم الملف ",
+        "actions": "العمليات"
+      }
+    }
+}

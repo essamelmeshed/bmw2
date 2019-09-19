@@ -1,0 +1,29 @@
+<aside class="left-sidebar">
+    <!-- Sidebar scroll-->
+    <div class="scroll-sidebar">
+
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+                <li class="nav-devider"></li>
+                <li>
+                    <a routerLink="/services" (click)="addExpandClass('component')"
+                        [routerLinkActive]="['router-link-active']"><i class="mdi mdi-equal"></i><span
+                            class="hide-menu">Services</span></a>
+                </li>
+
+                <li>
+                    <a routerLink="/news" (click)="addExpandClass('component')"
+                        [routerLinkActive]="['router-link-active']"><i class="mdi mdi-equal"></i><span
+                            class="hide-menu">News / Offers / Events</span></a>
+                </li>
+                <li>
+                    <a routerLink="/branches" (click)="addExpandClass('component')"
+                        [routerLinkActive]="['router-link-active']"><i class="mdi mdi-equal"></i><span
+                            class="hide-menu">Branches</span></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+    </div>
+</aside>

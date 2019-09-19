@@ -1,0 +1,41 @@
+<section class="login-register">
+  <div class="login-box card">
+    <div class="card-body">
+      <form class="form-horizontal form-material text-center" [formGroup]="form">
+        <a class="db" style="font-size: 100px">
+          <i class="fa fa-user"></i>
+        </a>
+
+        <div class="form-group m-t-40">
+          <div class="col-xs-12">
+            <input class="form-control" type="email" placeholder="Email" [formControl]="email">
+
+            <app-field-error-display [displayError]="isFieldValid('email')" errorMsg="this field is required">
+            </app-field-error-display>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-xs-12">
+            <input class="form-control" type="password" placeholder="Password" [formControl]="password">
+            <app-field-error-display [displayError]="isFieldValid('password')" errorMsg="this field is required">
+            </app-field-error-display>
+          </div>
+        </div>
+
+        <div class="row warn" *ngFor="let error of errors">
+          *{{error.message}}
+        </div>
+
+        <div class="form-group text-center m-t-20">
+
+          <div class="col-xs-12">
+
+            <button class="btn btn-info btn-lg btn-block text-uppercase btn-rounded" type="button"
+              (click)="onSubmit()">Login</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>

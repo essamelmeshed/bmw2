@@ -1,0 +1,109 @@
+<div class="col-12">
+
+  <div style="display: flex;justify-content: space-between" class="mb-1">
+    <div class="lead pl-2 pt-2">
+
+    </div>
+
+    <div class="pt-2 pr-2">
+      <button type="button" style="align-self: center" class="btn btn-info mr-3" (click)="addNewService()">
+        <i class="mdi mdi-plus-box"></i>
+        Add new news / offer / event
+      </button>
+    </div>
+  </div>
+  <hr>
+
+  <!-- <div class="table-responsive"> -->
+  <div class="tableActions">
+    <h1>
+      News
+    </h1>
+    <!-- <table class="table table-hover no-wrap"> -->
+    <table class=" table color-bordered-table info-bordered-table">
+      <thead>
+        <tr>
+          <th>Header</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <!-- <tbody> -->
+      <tbody id="content">
+        <tr *ngFor="let item of newsList">
+          <td scope="col">{{item.header}}</td>
+          <td scope="col">{{item.from}}</td>
+          <td scope="col">{{item.to}}</td>
+          <td scope="col">
+            <img src="{{baseUrl+'/'+item.picture}}" style="width: 64px;height: 64px;">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+  <!-- <div class="table-responsive"> -->
+  <div class="tableActions">
+    <h1>
+      Events
+    </h1>
+    <!-- <table class="table table-hover no-wrap"> -->
+    <table class=" table color-bordered-table info-bordered-table">
+      <thead>
+        <tr>
+          <th>Header</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <!-- <tbody> -->
+      <tbody id="content">
+        <tr *ngFor="let item of eventsList">
+          <td scope="col">{{item.header}}</td>
+          <td scope="col">{{item.from}}</td>
+          <td scope="col">{{item.to}}</td>
+          <td scope="col">
+            <img src="{{baseUrl+'/'+item.picture}}" style="width: 64px;height: 64px;">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <!-- <div class="table-responsive"> -->
+  <div class="tableActions">
+    <h1>
+      Offers
+    </h1>
+    <!-- <table class="table table-hover no-wrap"> -->
+    <table class=" table color-bordered-table info-bordered-table">
+      <thead>
+        <tr>
+          <th>Header</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <!-- <tbody> -->
+      <tbody id="content">
+        <tr *ngFor="let item of offersList">
+          <td scope="col">{{item.header}}</td>
+          <td scope="col">{{item.from}}</td>
+          <td scope="col">{{item.to}}</td>
+          <td scope="col">
+            <img src="{{baseUrl+'/'+item.picture}}" style="width: 64px;height: 64px;">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+</div>

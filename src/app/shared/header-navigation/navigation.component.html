@@ -1,0 +1,54 @@
+<header class="topbar">
+    <nav class="navbar top-navbar navbar-expand-md navbar-light p-0">
+        <!-- ============================================================== -->
+        <!-- Logo -->
+        <!-- ============================================================== -->
+        <div class="navbar-collapse">
+            <!-- ============================================================== -->
+            <!-- toggle and nav items -->
+            <!-- ============================================================== -->
+            <!-- <ul class="navbar-nav mr-auto mt-md-0 "> -->
+            <ul class="navbar-nav  mt-md-0 ">
+                <!-- This is  -->
+                <li class="nav-item"><a class="nav-link nav-toggler hidden-lg-up text-muted waves-effect waves-dark"
+                        href="javascript:void(0)"><i class="ti-menu"> </i></a></li>
+
+            </ul>
+
+            <ul class="navbar-nav my-lg-0">
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" aria-haspopup="true"
+                        class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown"
+                        href=""><img alt="user" class="profile-pic" src="assets/images/logo-icon.png" style="height: 32px; width: 32px" />
+                        <!-- <span style="text-transform: capitalize">{{user.firstName}}</span> -->
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left animated flipInY">
+                        <ul class="dropdown-user">
+                            <li><a [routerLink]="'/users/profile'"><i class="ti-settings"></i> Settings</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li (click)="logout()"><a style="cursor: pointer;"><i class="fa fa-power-off"></i>
+                                    Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <!-- Logo icon -->
+                <b>
+                    <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                    <!-- Dark Logo icon -->
+                    <img alt="homepage" class="dark-logo" src="assets/images/logo-icon.png" style="height: 50px;" />
+                    <!-- Light Logo icon -->
+                    <img alt="homepage" class="light-logo" src="assets/images/logo-light-icon.png" />
+                </b>
+                <!--End Logo icon -->
+            </a>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Logo -->
+        <!-- ============================================================== -->
+
+    </nav>
+</header>
