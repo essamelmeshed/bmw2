@@ -29,7 +29,7 @@
     "@syncfusion/ej2-angular-dropdowns": "^16.4.53",
     "angular-calendar": "^0.22.1",
     "bootstrap": "^4.0.0-beta",
-    "chart.js": "^2.7.1",
+    "chart.js": "^2.9.4",
     "chartist": "^0.11.0",
     "core-js": "^2.4.1",
     "file-saver": "^2.0.0",
